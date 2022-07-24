@@ -1,9 +1,0 @@
-{
-    "jwtSecret": "d311b6075d358a4a6d1e24b0d09a486d9bddae3260cd9f62f4cef9705af712e53754e2e4c5b94f91751a3eee85216aa00563fb89450dccbdc3d260e7048b3996",
-    "mongoURI": "mongodb+srv://flatsix:4qs6H9JexmmCqjqT@cluster0.joiu2.mongodb.net/flatsix",
-
-    "sendgridAPIKey": "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",
-    "sendgridVerifiedSender": "flatsixears@gmail.com",
-
-    "serverURL": "http://localhost:8080"
-}
