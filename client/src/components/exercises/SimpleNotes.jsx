@@ -21,14 +21,6 @@ function Exercise(props) {
     // * ------- MUI Vars ------- *
     // * ------------------------- *
 
-    const drawerWidth = 400
-    const fullWidth = 1405
-
-    const ButtonPaper = styled(Paper)(({theme}) => ({
-        marginTop: theme.spacing(3),
-        backgroundColor: 'white',
-    }))
-
     const ButtonGrid = styled(Grid)(({theme}) => ({
         marginTop: theme.spacing(3),
         justifyContent: 'center',

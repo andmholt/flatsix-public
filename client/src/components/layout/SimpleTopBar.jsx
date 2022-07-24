@@ -11,7 +11,7 @@ import {
     Typography,
 } from '@mui/material'
 import {
-    AccountCircle as AccountCircleIcon
+    AccountCircle as AccountCircleIcon,
 } from '@mui/icons-material'
 
 import flatsixLogo from '../../assets/flatsix_logo.png'

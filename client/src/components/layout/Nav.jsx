@@ -4,7 +4,6 @@ import {
     AppBar as MuiAppBar,
     Box,
     Button,
-    Container,
     Divider,
     Drawer,
     IconButton,
@@ -16,24 +15,19 @@ import {
     Menu as MuiMenu,
     MenuItem as MuiMenuItem,
     styled,
-    TextField,
     Toolbar as MuiToolbar,
     Typography as MuiTypography,
 } from '@mui/material'
 import {
     AccountCircle as AccountCircleIcon,
     Audiotrack as AudiotrackIcon,
-    AutoGraph,
     AutoGraph as AutoGraphIcon,
-    Book as BookIcon,
     BorderColor as BorderColorIcon,
     EmojiEvents as EmojiEventsIcon,
     Help as HelpIcon,
     Home as HomeIcon,
     Info as InfoIcon,
-    Menu as MenuIcon,
     Search as SearchIcon,
-    Settings as SettingsIcon,
     Star as StarIcon,
 } from '@mui/icons-material'
 

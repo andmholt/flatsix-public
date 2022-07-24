@@ -47,17 +47,17 @@ function Progress() {
 
     return (
         <NavMargin>
+            
             <Nav />
 
             <Paper>
+
                 <Typography variant='h3'>
                     Progress
                 </Typography>
 
                 <Divider />
                 <Spacer />
-
-                
 
             </Paper>
 

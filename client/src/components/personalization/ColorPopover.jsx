@@ -32,11 +32,9 @@ export default function ColorPopover(props) {
   }))
 
   const NoteColorsGrid = styled(Grid)(({theme}) => ({
-
   }))
 
   const NoteColorsGridItem = styled(Grid)(({theme}) => ({
-
   }))
 
   const Popover = styled(MuiPopover)(({theme}) => ({

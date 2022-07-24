@@ -95,7 +95,6 @@ const GridItem = styled(Grid)(({theme}) => ({
             <ExerciseButton disableRipple variant='contained'
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
-                //component={Link} to={props.exercise.title}
                 component={Link} to='Simple Notes' // for demo only
             >
                 <Typography variant='h5'>

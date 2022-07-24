@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion, useAnimationControls } from 'framer-motion'
-import Howl from 'howler'
 import {
     Box,
     Button,

@@ -56,11 +56,9 @@ function Personalization() {
     }))
 
     const NoteColorsGrid = styled(Grid)(({theme}) => ({
-
     }))
 
     const NoteColorsGridItem = styled(Grid)(({theme}) => ({
-
     }))
 
     const Paper = styled(MuiPaper)(({theme}) => ({

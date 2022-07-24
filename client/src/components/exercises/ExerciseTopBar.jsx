@@ -11,8 +11,6 @@ function ExerciseTopBar(props) {
     const params = useParams()
     const navigate = useNavigate()
 
-    //const currTab = useSelector((state) => state.exerciseTab)
-    //const dispatch = useDispatch()
     const [currTab, setCurrTab] = useState('notes')
 
     const setTabAndCallback = (e, newTab) => {
@@ -32,7 +30,6 @@ function ExerciseTopBar(props) {
         <Tabs
             variant='fullWidth'
             value={currTab}
-            //onChange={(event, value) => dispatch(set(value))}
             onChange={setTabAndCallback}
             sx={{
                 position: 'static',

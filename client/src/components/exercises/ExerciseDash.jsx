@@ -4,27 +4,11 @@ import { useDispatch } from 'react-redux'
 
 import {
     Box as MuiBox,
-    Button,
-    ButtonBase,
-    Container,
-    Divider,
-    Drawer,
     Grid,
-    List,
-    ListItem,
-    ListItemButton as MuiListItemButton,
-    ListItemIcon,
-    Paper,
     styled,
-    Tab,
-    Tabs,
-    Toolbar,
-    Typography,
 } from '@mui/material'
-import { Co2Sharp } from '@mui/icons-material'
 
 // components
-import Exercise from './Exercise'
 import ExerciseCard from './ExerciseCard'
 import ExerciseSidebar from './ExerciseSidebar'
 import ExerciseTopBar from './ExerciseTopBar'
@@ -34,7 +18,6 @@ import Nav from '../layout/Nav'
 import SimpleNotes from './SimpleNotes'
 
 // funcs
-import { set as setOptionsCategories, initial as initialOptionsCategories } from './currExerciseSlice'
 import { getExercises } from '../../services/exercises'
 
 const fullWidth = 1405
@@ -61,7 +44,6 @@ const optionsCategoriesDefault = {
 
 function ExerciseDisplay(props) {
 
-    const dispatch = useDispatch()
     const params = useParams()
 
     // holds exercises
@@ -115,52 +97,6 @@ function ExerciseDisplay(props) {
         padding: theme.spacing(5),
         justifyContent: 'center',
     }))
-
-    const notesTabs = [
-        {
-            // guess notes, 1 by 1
-            // each level adds:
-            // - new note type
-            title: 'Simple Notes',
-            body: 'Guess the note.',
-            accuracy: 89,
-            level: 1,
-        },
-        {
-            // guess notes in sequence
-            // each level adds:
-            // - new note type (in corresponding to note added in simple notes)
-            // - every 3 or so lvls: another note in sequence
-            title: 'More Notes',
-            body: 'Guess the notes. There are more this time...',
-            accuracy: 84,
-            level: 1,
-        },
-        {
-            // guess simple melodies
-            // lvl 1 starts with more notes (maybe 3 or 4?)
-            // each level adds:
-            // - new note type every couple of lvls (does not directly correspond to simple 
-            //   notes progression, since more notes to begin with)
-            // - different rhythms and speed
-            title: 'Simple Melodies',
-            body: 'Guess the melody.',
-            accuracy: 74,
-            level: 1,
-        },
-        {
-            title: 'Exercise 4',
-            body: 'asdfasdf',
-            accuracy: 89,
-            level: 2,
-        },
-        {
-            title: 'Exercise 5',
-            body: 'asdfasdf',
-            accuracy: 73,
-            level: 2,
-        },
-    ]
 
     let notes = null
     if (notesExercises.length) {

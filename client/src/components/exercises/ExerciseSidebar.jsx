@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import {
-    Button,
     Divider,
     Drawer,
-    Grid,
     IconButton,
     LinearProgress as MuiLinearProgress,
     List as MuiList,
@@ -20,10 +18,9 @@ import {
 
 import { getUserDefault } from '../../utils/defaults'
 import { getLevelColor } from '../../utils/levels'
-import { noteToScaleDegree, noteToSolfege } from '../../utils/notes'
+import { noteToSolfege } from '../../utils/notes'
 import { load as loadUser } from '../../services/auth'
 import { load as loadExercise } from '../../services/exercises'
-import store from '../../store'
 
 // * ------------------------- *
 // * ---- Component Vars ---- *
